@@ -8,21 +8,17 @@ import java.time.Instant;
 
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class TaskDto {
 
-    @NonNull
     Long id;
 
-    @NonNull
     String name;
 
-    @NonNull
     @JsonProperty("created_at")
     Instant createdAt;
 
-    @NonNull
     String description;
 }

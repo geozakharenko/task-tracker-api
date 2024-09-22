@@ -8,10 +8,11 @@ import java.time.Instant;
 
 @Data
 @Builder
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class ProjectDto {
+
     @NonNull
     Long id;
 
@@ -21,4 +22,8 @@ public class ProjectDto {
     @NonNull
     @JsonProperty("created_at")
     Instant createdAt;
+
+    @NonNull
+    @JsonProperty("updated_at")
+    Instant updatedAt;
 }

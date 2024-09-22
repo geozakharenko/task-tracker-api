@@ -9,6 +9,7 @@ import java.util.stream.Stream;
 
 @Repository
 public interface ProjectRepository extends JpaRepository<ProjectEntity, Long> {
+
     Optional<ProjectEntity> findByName(String name);
 
     Stream<ProjectEntity> streamAllBy();
